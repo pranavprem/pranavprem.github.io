@@ -1,0 +1,17 @@
+{
+  "name": "pranavprem.github.io",
+  "private": true,
+  "description": "Static GitHub Pages resume. These scripts only validate the files Pages serves.",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "html-validate index.html",
+    "check": "node scripts/check-site.js",
+    "serve": "python3 -m http.server 8080",
+    "validate": "npm run format:check && npm run lint && npm run check"
+  },
+  "devDependencies": {
+    "html-validate": "^10.0.0",
+    "prettier": "^3.6.2"
+  }
+}
