@@ -13,5 +13,13 @@
   "devDependencies": {
     "html-validate": "^10.0.0",
     "prettier": "^3.6.2"
+  },
+  "overrides": {
+    "html-validate": {
+      "glob": {
+        ".": "^14.0.2",
+        "minimatch": "^11.0.1"
+      }
+    }
   }
 }
